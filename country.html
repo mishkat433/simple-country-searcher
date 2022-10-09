@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Name</title>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgb(17, 234, 254);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: rgb(17, 15, 162);
+            border-radius: 5px;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 3rem;
+            color: chocolate;
+        }
+
+        #country {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+
+        }
+
+        .card {
+            border: 1px solid gray;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(8, 28, 66);
+            color: white;
+        }
+
+        .flag {
+            height: 200px;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .full {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .inp {
+            padding: 5px;
+            width: 300px;
+        }
+
+        .btn {
+            padding: 5px;
+        }
+
+        .head {
+            margin: 0 auto;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">All country Names</h1>
+        <div class="full">
+            <input class="inp" type="text" name="" id="inputText" placeholder="Enter Country Name">
+            <button class="btn" onclick="searchCountry()">Search</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <img class="head" id="loading" src="./Bubble-Preloader-1-1.gif" alt="Spiner">
+
+            <div id="country">
+
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./js/countryes.js"></script>
+</body>
+
+</html>
